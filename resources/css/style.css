@@ -1,0 +1,251 @@
+*{
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  font-family: Helvetica;
+}
+.header-full{
+  background-color: black;
+  width: 100%;
+}
+.head-txt-lg{
+  display: flex;
+  width: 960px;
+  margin: auto;
+  background-color: black;
+  padding-top: 0.66rem;
+  justify-content: flex-start;
+}
+#logo{
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  margin: auto 0;
+
+}
+.head-txt-lg p{
+  padding: 1rem;
+}
+/* Moto image content*/
+
+.container{
+  width: 960px;
+  margin: auto ;
+}
+.featured-image{
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+}
+/* Black box text*/
+
+.box-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  top: 9rem;
+  position: relative;
+}
+.box-text h4{
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+.box-text h1{
+  font-size: 2rem;
+}
+/*Navigation Bar*/
+
+.navigation{
+  width: 100%;
+  background-color: firebrick;
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-evenly;
+}
+/*Items of navigation bar*/
+
+.item{
+  display: inline-block;
+  padding: 0.75rem 0;
+}
+.nav-bar a{
+  text-decoration: none;
+  font-family: Helvetica;
+}
+/*Producs*/
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.product {
+  width: 30%;
+}
+.product-image img {
+  max-width: 8rem;
+}
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+.description {
+  display: block;
+  padding: 0.5rem 0;
+  background-color: black;
+  text-align: center;
+  font-family: Helvetica;
+}
+/*info business*/
+
+.find-us {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.info {
+  width: 35%;
+}
+.title {
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+  font-family: Helvetica;
+}
+.loc{
+  color: black;
+  font-family: Helvetica;
+}
+/*Footer */
+
+footer {
+  display: flex;
+  text-align: left;
+  background-color: black;
+  padding: 2rem;
+  font-family: Helvetica;
+  height: 5rem;
+}
+.container.tablet {
+  display: none;
+}
+/*Media Query*/
+
+@media only screen and (max-width:1024px){
+  .container{
+    width: auto;
+    margin: auto;
+
+  }
+.nav-bar{
+  display: none;
+}
+.container.tablet{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 0.75rem;
+}
+.products{
+  width: 100%;
+}
+.product.pen{
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  width: 47%%;
+  margin-right: auto;
+}
+.product.watch{
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  width: 47%;
+}
+.product.glasses{
+  display: none;
+}
+/*Screen max 470px*/
+@media only screen and (max-width: 470px) {
+  .container{
+    max-width: 90%;
+  }
+  h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Helvetica;
+  }
+  h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+    font-family: Helvetica;
+  }
+  .box-text {
+    width: auto;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+  }
+  .header-full{
+    padding: auto;
+  }
+  .head-txt-lg{
+    width: 100%;
+  }
+  .featured-image {
+    height: 15rem;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .container.tablet {
+    width: 90%;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    }
+  }
+  .product.pen{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+  }
+  .product.watch {
+    display: none;
+  }
+  .product.glasses{
+    display: none;
+  }
+  .find-us {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info {
+    width: 90%;
+    display: block;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    font-family: Helvetica;
+  }
+
+
+  footer {
+    text-align: center;
+    font-family: Helvetica;
+  }
+}
