@@ -141,39 +141,23 @@ footer {
 /*Media Query*/
 
 @media only screen and (max-width:1024px){
-  .container{
-    width: auto;
-    margin: auto;
-
-  }
 .nav-bar{
   display: none;
 }
 .container.tablet{
   display: flex;
   justify-content: center;
-  width: 90%;
   padding: 0.75rem;
+  font-family: Helvetica;
 }
 .products{
-  width: 100%;
-}
-.product.pen{
-  display: block;
-  justify-content: space-around;
-  align-items: center;
-  width: 47%%;
-  margin-right: auto;
-}
-.product.watch{
-  display: block;
-  justify-content: space-around;
-  align-items: center;
   width: 47%;
+  display: block;
 }
 .product.glasses{
   display: none;
 }
+
 /*Screen max 470px*/
 @media only screen and (max-width: 470px) {
   .container{
